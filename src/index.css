@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  
+  /* Kaszubskie kolory (Kashubian Colors) */
+  --color-k-blue-dark: #003399;   /* modry */
+  --color-k-blue-med: #0066cc;
+  --color-k-blue-light: #66ccff;
+  --color-k-yellow: #ffcc00;
+  --color-k-green: #009933;
+  --color-k-red: #cc0000;
+  --color-pattern-bg: #f8fbff;
+}
+
+@layer base {
+  body {
+    @apply bg-pattern-bg text-stone-900 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.kashubian-pattern {
+  background-image: url("https://www.transparenttextures.com/patterns/pinstriped-suit.png");
+  opacity: 0.05;
+}
+
+.folk-border {
+  border-image: linear-gradient(to right, var(--color-k-blue-dark), var(--color-k-blue-light), var(--color-k-yellow), var(--color-k-red)) 1;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
