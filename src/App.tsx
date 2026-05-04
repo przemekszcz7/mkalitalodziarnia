@@ -19,22 +19,20 @@ import {
 } from "lucide-react";
 
 const IMAGES = [
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/560285382_122192933516305396_780595220407493081_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=2a1932&_nc_ohc=cCWMbQWQOp4Q7kNvwGmM9lx&_nc_oc=AdoBND87UdKY-_yPWA9OtiwwKIb83_x8yYUYpt0kfqhbIdcISwk9XIg3KEaN8VDACvs&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=0pTtJtOW6AgoI8w_7iB49A&_nc_ss=7b2a8&oh=00_Af2dJxPtBHtnU3wRMFd0OB5TqHWhkWEx7pnmbyJvXkBlKQ&oe=69F7B7E6",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/480966822_122164315964305396_352940745156534189_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=uhT1R-ZNhTIQ7kNvwHS1Jm8&_nc_oc=AdorU2Ku12aIconl0N-vGeMBws0-0TA5tTkBf4h1fGcgaUogKT0fctOMXiA9Y9kULKI&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=qNPTnad0DAcvoVgC_rsqKQ&_nc_ss=7b2a8&oh=00_Af3nh2WtPoTnnlfhhHmidAvxinQFqxRSqjOxcYyB3iyevg&oe=69F7B97A",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/485794918_122164315946305396_749449054182533520_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=T430SBLzGPwQ7kNvwH50MNI&_nc_oc=AdpRrmsAvS6s3XBsAt_7W_zcwl7YbcNk34sRYPkbyEETc1n-VC1RcUmZu8_0v2UIj4Y&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=IXku8JlRIpfsjeTZHMN_Dg&_nc_ss=7b2a8&oh=00_Af0EzlrileEVleqFZgLg5j_Phg3qxwhiIJxbfMr9dM6XOw&oe=69F7D25F",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/480959112_122164315874305396_7778627938858735543_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=oHAi24Ug1UsQ7kNvwGpK7Xl&_nc_oc=Adque_GcRghHUB3i5VBEQUojDevjwhIOvgpC8RmqkWuM7NDaNpn3z_6M96duYQDRZR8&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=xLQAeQ8wUHolHruZde6NeA&_nc_ss=7b2a8&oh=00_Af1o-iGm8qfXbq21UM8r8TWshG3B8eRtFgCRi-oJhgtZDg&oe=69F7C182",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/485701811_122164315850305396_3587295210431119212_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=z0xYmarCO7wQ7kNvwFTt2my&_nc_oc=AdoPUA-smZQFzKb5_5ETSKKNEUBJgEAb4VSgl9vv7qd6OUKWKi4rJC3zx14Z3KrEzIA&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=CBECnf_al2SHyrTEMX-1MQ&_nc_ss=7b2a8&oh=00_Af1jpijfrR59v3YBpVkdN28JcCVpUlegxfcRNxU19ElK1Q&oe=69F7B82A",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/485941204_122164315832305396_3885404114823835887_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=wyVnWOCu3REQ7kNvwGvdbyZ&_nc_oc=AdpfVc9AU1xjdcOb-zLtdXQl5dOG1Vpd7sHPY3Zd3iyla9YILR7NGaY41udfzB3exeg&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=YcyrmqzExuJxu-3qyhtn5Q&_nc_ss=7b2a8&oh=00_Af2fdgQuxiJg0fkl9q-lUIEGryBD4xoCytfoi6gABvC16w&oe=69F7B577",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/452292186_122127105512305396_3166449208725750601_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=53a332&_nc_ohc=c02jKACvKmYQ7kNvwE8wtDl&_nc_oc=AdoNFu8Ge49V0XkPGF0kWjabNvqLHkEpneo6Hy4kgbgtFR4Tv90_kSQRZ6BVI3c8eGQ&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=zQaGcSfwJB53J5cMexS87w&_nc_ss=7b2a8&oh=00_Af2Io9315Uk0CwqoKGIJ1KAgcNytUBB_x7IWBDAbOlES2A&oe=69F7CC0C",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/471711537_122152418804305396_5529003255252941305_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=4Roq1pFKcVYQ7kNvwHoPkw3&_nc_oc=AdqbI5zL5q6F7WLcfc8EpXzv6JgW0ceit6atuXLUpJX7JoZLoMNvQj4IyHNAKbtW3dQ&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=RL1mt_eG6KYYFCcbWBWkhA&_nc_ss=7b2a8&oh=00_Af2C2_K4w22DfhWZGJlr1nqn4C9B115nB6gWLwBXKiqPhA&oe=69F7D3AC",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/470890687_122151494840305396_8112218414230276631_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd6889&_nc_ohc=r2ZMc17yF0QQ7kNvwEzyFMh&_nc_oc=Adr-Ch-VG38BZ4PaiQrA6xsG2DP7sIPUBO6xhe0bZQD94PrOk1H0Hk1TYNyZj8NxraY&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=iVKTQk0YR8A7GdLfDGbrfw&_nc_ss=7b2a8&oh=00_Af2KF10INbovosGC0pXtZGSsj4X0KuQjEsc9AUpSgdz1qg&oe=69F7C60E"
+  "https://iili.io/BQA7xyX.md.jpg",
+  "https://iili.io/BQA7q4p.md.jpg",
+  "https://iili.io/BQA7C3N.md.jpg",
+  "https://iili.io/BQA7fGR.md.jpg",
+  "https://iili.io/BQA7Rnf.md.jpg",
+  "https://iili.io/BQA7Tjs.md.jpg",
+  "https://iili.io/BQA7Iun.md.jpg",
+  "https://iili.io/BQA7aF2.md.jpg"
 ];
 
 const TORTY_IMAGES = [
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/470224257_122150820968305396_4034949486856820257_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=lsSRneqS6ysQ7kNvwHPbxbE&_nc_oc=AdpKYq-YZvg7nOOIOq5XqzurUCppyTorM0P-v-nS6QDF1c32QGZhvmPakZ6kIfLM2RQ&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=U-dOHknVsSLWzNnuKffKvw&_nc_ss=7b2a8&oh=00_Af0THSvA7MpEJEFUv_mZ-GOgqdbB3sRZ5Cmw8Wps7j1_xw&oe=69F7A6C9",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/470220247_122150821022305396_4152913718976234292_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=fCQlm-WEVxEQ7kNvwFLr27J&_nc_oc=Adow_SroRx2JW1YB6LKCrgKPYgU2ptTHGLE7LzhatNIJktzNLbwWRrbcr46giHcBbm8&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=oYmvEMRjO4A37crID9MQbA&_nc_ss=7b2a8&oh=00_Af3N9Hfx_HZBHpN0xhNpSTymMS-WQ598j8AbVwGYQ9m7ZA&oe=69F7AF4A",
-  "https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/470205944_122150820800305396_7133538781128797404_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=vjgLDQ8MpNkQ7kNvwG6LRl_&_nc_oc=Adq3bh8apINTSRctHfoHuI-fuNfglS2Cv6aAb106F6W6WuUVFhp9gpSJcSeIkWdUr1s&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=GHhThqJSXf4yDVv1pscFyQ&_nc_ss=7b2a8&oh=00_Af2mUZ9Jbo-gC-ZVLYlQFxo9-H-ZoaoQBFXmJy99yQCFiw&oe=69F7C6CE",
-  "https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/470218874_122150820806305396_4580911828186462779_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=geakA6LgCWgQ7kNvwEV9xWJ&_nc_oc=AdqNSc973Yqg03QjKbf2_ApV7CR7pMtwRxhDzPNH3E8ptPf4Xw-MWYKjRwfHnLlNiO8&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=OcUzIf3GMO6aVP_eTYfeGA&_nc_ss=7b2a8&oh=00_Af0_azcrrCu00UnFopqKjrAoRzRgslJl1-m1qi2ntwU5eQ&oe=69F7AB87"
+  "https://iili.io/BQA7l87.md.jpg",
+  "https://iili.io/BQA7199.md.jpg",
+  "https://iili.io/BQA7Eue.md.jpg"
 ];
 
 export default function App() {
